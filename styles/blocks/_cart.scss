@@ -1,0 +1,21 @@
+@use '../helpers' as *;
+
+.cart {
+  @include reset-button;
+  @include hover {
+    span {
+    transform: rotateY(360deg);
+    }
+  }
+
+  color: var(--color-light);
+  span {
+    @include flex-center(true);
+
+    border-radius: 50%;
+    min-width: rem(30);
+    min-height: rem(30);
+    background-color: var(--color-gray);
+    transition-duration: 0.7s;
+  }
+}

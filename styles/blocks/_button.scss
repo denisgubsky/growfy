@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.button {
+  @include flex-center(true);
+
+  white-space: nowrap;
+  padding: 1.14em 2.07em;
+  background-color: var(--color-blue);
+  border-radius: 3.125em;
+  letter-spacing: 0.14em;
+  transition-duration: var(--transition-duration);
+  border: rem(2) solid var(--color-blue);
+  
+  @include hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    transform: translate(0, rem(5));
+  }
+}
+
+.button-transparent {
+  border: rem(2) solid var(--color-gray);
+  background-color: var(--color-gray);
+}

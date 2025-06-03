@@ -1,0 +1,69 @@
+@use '../helpers' as *;
+
+.statistics {
+  &__inner {
+    display: flex;
+    gap: fluid(32, 30);
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__body {
+    display: flex;
+    gap: rem(32);
+    flex-wrap: wrap;
+    
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    flex: 0 1 45%;
+    background-color: var(--color-gray);
+    border-radius: rem(30);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+    padding: rem(40);
+
+    
+    @include mobile {
+      flex: 0 1 100%;
+    }
+  }
+
+  &__images {
+    min-width: rem(499);
+    min-height: rem(588);
+    border-radius: 0 rem(378) rem(378) rem(378);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      -webkit-user-drag: none;
+      user-select: none;
+    }
+
+    @include tablet {
+      min-width: auto;
+      min-height: auto;
+      max-width: rem(450);
+    }
+  }
+
+
+  &__title {
+    font-weight: 500;
+    font-size: fluid(51, 33);
+    line-height: 1.2;
+    color: var(--color-light);
+  }
+}

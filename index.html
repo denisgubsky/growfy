@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growfy</title>
+  <link rel="stylesheet" href="./styles/css/main.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="./scripts/main.js" type="module" defer></script>
+</head>
+<body>
+  <header class="header" data-js-header>
+    <div class="header__inner container">
+      <a href="/" class="header__logo logo" aria-label="Go to homepage" title="Go to homepage">
+        <img src="images/icons/logo.svg" alt="logo" width="137" height="33">
+      </a>
+      <div class="header__wrapper">
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link"><span>Home</span></a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link"><span>About</span></a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link"><span>Pages</span></a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link"><span>Services</span></a>
+              </li>
+            </ul>
+          </nav>
+          <a href="/" class="header__button button" aria-label="View cart">Get started</a>
+        </div>
+        <button type="button" class="header__cart cart">Cart <span>0</span></button>
+        <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+          title="Open menu" data-js-header-burger-button>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <section class="hero">
+      <div class="hero__inner container">
+        <div class="hero__body">
+          <h1 class="hero__title">Marketing solutions that grow your business.</h1>
+          <div class="hero__text text--other text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum
+              tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+          </div>
+          <div class="hero__buttons">
+            <a href="/" class="hero__button--first button">Our services</a>
+            <a href="/" class="hero__button--second button button-transparent">Contact us</a>
+          </div>
+        </div>
+        <div class="hero__images">
+          <div class="hero__images-column hero__images-column--first">
+            <div class="hero__images-item">
+              <img class="hero__image" src="./images/hero/01.jpg" alt="" width="242" height="423">
+            </div>
+            <div class="hero__images-item">
+              <img class="hero__image" src="./images/hero/02.jpg" alt="" width="242" height="242">
+            </div>
+          </div>
+          <div class="hero__images-column hero__images-column--second">
+            <div class="hero__images-item">
+              <img class="hero__image" src="./images/hero/03.jpg" alt="" width="242" height="242">
+            </div>
+            <div class="hero__images-item">
+              <img class="hero__image" src="./images/hero/04.jpg" alt="" width="242" height="423">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__partners container">
+        <div class="hero__partners-title">
+          <p>trusted by startups and large enterprises</p>
+        </div>
+        <ul class="hero__partners-list">
+          <h2 class="visually-hidden">Our partners</h2>
+          <li class="hero__partners-item">
+            <img src="./images/hero-partners/01.svg" alt="luminous" class="hero__partners-image" loading="lazy">
+          </li>
+          <li class="hero__partners-item">
+            <img src="./images/hero-partners/02.svg" alt="sitemark" class="hero__partners-image" loading="lazy">
+          </li>
+          <li class="hero__partners-item">
+            <img src="./images/hero-partners/03.svg" alt="pronature" class="hero__partners-image" loading="lazy">
+          </li>
+          <li class="hero__partners-item">
+            <img src="./images/hero-partners/04.svg" alt="greenish" class="hero__partners-image" loading="lazy">
+          </li>
+          <li class="hero__partners-item">
+            <img src="./images/hero-partners/05.svg" alt="waveless" class="hero__partners-image" loading="lazy">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__inner container">
+        <div class="services__body">
+          <div class="services__badge badge">services</div>
+          <h2 class="services__title">Services we offer</h2>
+          <div class="services__text text--other text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum
+              tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+          </div>
+          <a href="/" class="services__button button">All services</a>
+        </div>
+        <div class="services__cards">
+          <div class="services__column">
+            <div class="services__item">
+              <div class="services__icon">
+                <img src="./images/services/01.svg" alt="icon" class="services__image" loading="lazy" width="75"
+                  height="75">
+              </div>
+              <div class="services__label"> Social Media Marketing </div>
+              <div class="services__text text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent
+                  velit.</p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon">
+                <img src="./images/services/02.svg" alt="icon" class="services__image" loading="lazy" width="75"
+                  height="75">
+              </div>
+              <div class="services__label"> Email Marketing </div>
+              <div class="services__text text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent
+                  velit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="services__column">
+            <div class="services__item">
+              <div class="services__icon">
+                <img src="./images/services/03.svg" alt="icon" class="services__image" loading="lazy" width="75"
+                  height="75">
+              </div>
+              <div class="services__label"> Paid Advertising </div>
+              <div class="services__text text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent
+                  velit.</p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__icon">
+                <img src="./images/services/04.svg" alt="icon" class="services__image" loading="lazy" width="75"
+                  height="75">
+              </div>
+              <div class="services__label"> SEO Optimization </div>
+              <div class="services__text text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent
+                  velit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose-us">
+      <div class="why-choose-us__inner container">
+        <div class="why-choose-us__images">
+          <div class="why-choose-us__images-item">
+            <img src="./images/why-choose-us/01.jpg" alt="growfy" class="why-choose-us__image" width="423" height="785"
+              loading="lazy">
+          </div>
+          <div class="why-choose-us__images-item">
+            <img src="./images/why-choose-us/02.jpg" alt="growfy" class="why-choose-us__image" width="181" height="181"
+              loading="lazy">
+          </div>
+        </div>
+        <div class="why-choose-us__body">
+          <div class="why-choose-us__badge badge">why choose us</div>
+          <h3 class="why-choose-us__title">We help great brands scale with content marketing.</h3>
+          <div class="why-choose-us__text text--other text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum
+              tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+          </div>
+          <ul class="why-choose-us__list">
+            <li class="why-choose-us__item"> This is some text inside. </li>
+            <li class="why-choose-us__item"> This is some text inside. </li>
+            <li class="why-choose-us__item"> This is some text inside. </li>
+            <li class="why-choose-us__item"> This is some text inside. </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="statistics">
+      <h4 class="visually-hidden">statistics</h4>
+      <div class="statistics__inner container">
+        <div class="statistics__body">
+          <div class="statistics__item">
+            <div class="statistics__title">1.2M+</div>
+            <div class="statistics__text text--other text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__title">3.4B</div>
+            <div class="statistics__text text--other text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__title">98%</div>
+            <div class="statistics__text text--other text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__title">10+</div>
+            <div class="statistics__text text--other text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="statistics__images">
+          <img src="./images/statistics/01.jpg" alt="growfy" loading="lazy" width="499" height="588"
+            class="statistics__image">
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="testimonials__inner container">
+        <div class="testimonials__body">
+          <div class="testimonials__text-block">
+            <div class="testimonials__badge badge">testimonials</div>
+            <h5 class="testimonials__title">See what our clients say</h5>
+            <div class="testimonials__text text--other text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+            </div>
+          </div>
+          <div class="testimonials__buttons">
+            <a href="/" class="testimonials__button button">Get in touch</a>
+          </div>
+        </div>
+        <div class="testimonials__cards">
+          <div class="testimonials__column">
+            <div class="testimonials__item">
+              <div class="testimonials__item-header">
+                <img src="./images/testimonials/01.jpg" alt="growfy" width="68" height="68" loading="lazy"
+                  class="testimonials__item-image">
+                <div class="testimonials__item-info">
+                  <div class="testimonials__item-name">John Doe</div>
+                  <div class="testimonials__item-company">Company Name</div>
+                </div>
+              </div>
+              <div class="testimonials__item-body">
+                <div class="testimonials__item-title">"I recommend this agency"</div>
+                <div class="testimonials__item-text text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+                  </p>
+                </div>
+                <div class="testimonials__item-rating">
+                  <img src="./images/testimonials/stars.svg" alt="growfy" loading="lazy"
+                    class="testimonials__item-stars">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__column">
+            <div class="testimonials__item">
+              <div class="testimonials__item-header">
+                <img src="./images/testimonials/02.jpg" alt="growfy" width="68" height="68" loading="lazy"
+                  class="testimonials__item-image">
+                <div class="testimonials__item-info">
+                  <div class="testimonials__item-name">Alice Smith</div>
+                  <div class="testimonials__item-company">Company Name</div>
+                </div>
+              </div>
+              <div class="testimonials__item-body">
+                <div class="testimonials__item-title">"The support is awesome"</div>
+                <div class="testimonials__item-text text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+                  </p>
+                </div>
+                <div class="testimonials__item-rating">
+                  <img src="./images/testimonials/stars.svg" alt="growfy" loading="lazy"
+                    class="testimonials__item-stars">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__column">
+            <div class="testimonials__item">
+              <div class="testimonials__item-header">
+                <img src="./images/testimonials/03.jpg" alt="growfy" width="68" height="68" loading="lazy"
+                  class="testimonials__item-image">
+                <div class="testimonials__item-info">
+                  <div class="testimonials__item-name">Sophia Miller</div>
+                  <div class="testimonials__item-company">Company Name</div>
+                </div>
+              </div>
+              <div class="testimonials__item-body">
+                <div class="testimonials__item-title">“A game changer for us”</div>
+                <div class="testimonials__item-text text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+                  </p>
+                </div>
+                <div class="testimonials__item-rating">
+                  <img src="./images/testimonials/stars.svg" alt="growfy" loading="lazy"
+                    class="testimonials__item-stars">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="blog">
+      <div class="blog__inner container">
+        <div class="testimonials__body">
+          <div class="testimonials__text-block">
+            <div class="testimonials__badge badge">Blog</div>
+            <h5 class="testimonials__title">Read our articles & news</h5>
+            <div class="testimonials__text text--other text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+            </div>
+          </div>
+          <div class="testimonials__buttons">
+            <a href="/" class="testimonials__button button">All Posts</a>
+          </div>
+        </div>
+        <div class="blog__cards">
+          <div class="blog__column">
+            <div class="blog__item">
+              <div class="blog__item-images">
+                <a href="/"><img class="blog__item-image" src="./images/blog/01.jpg" alt="growfy" width="395"
+                    height="194"></a>
+                <a href="/" class="blog__item-label">Social Media</a>
+              </div>
+              <div class="blog__item-body">
+                <div class="blog__item-date">August 28, 2024</div>
+                <div class="blog__item-title">How to Use Social Proof in Marketing</div>
+                <div class="blog__item-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu
+                  enim urna adipiscing praesent velit viverra sit semper lorem.</div>
+                <a href="/" class="blog__item-link">Read now</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog__column">
+            <div class="blog__item">
+              <div class="blog__item-images">
+                <a href="/"><img class="blog__item-image" src="./images/blog/02.jpg" alt="growfy" width="395"
+                    height="194"></a>
+                <a href="/" class="blog__item-label">SEO</a>
+              </div>
+              <div class="blog__item-body">
+                <div class="blog__item-date">August 28, 2024</div>
+                <div class="blog__item-title">How to Use Social Proof in Marketing</div>
+                <div class="blog__item-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu
+                  enim urna adipiscing praesent velit viverra sit semper lorem.</div>
+                <a href="/" class="blog__item-link">Read now</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog__column">
+            <div class="blog__item">
+              <div class="blog__item-images">
+                <a href="/"><img class="blog__item-image" src="./images/blog/03.jpg" alt="growfy" width="395"
+                    height="194"></a>
+                <a href="/" class="blog__item-label">Strategy</a>
+              </div>
+              <div class="blog__item-body">
+                <div class="blog__item-date">August 28, 2024</div>
+                <div class="blog__item-title">How to Use Social Proof in Marketing</div>
+                <div class="blog__item-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu
+                  enim urna adipiscing praesent velit viverra sit semper lorem.</div>
+                <a href="/" class="blog__item-link">Read now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="start container">
+      <div class="start__inner">
+        <div class="start__body">
+          <div class="testimonials__item-title">Ready to start scaling your business now?</div>
+          <div class="start__text text">Lorem ipsum dolor sit am consectetur adipiscing varius enim in eros.</div>
+        </div>
+        <div class="start__buttons">
+          <a href="/" class="start__button button">Our services</a>
+          <a href="/" class="start__button button button-transparent">Contact us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container">
+    <div class="footer__inner">
+      <div class="footer__body">
+        <a href="/" class="footer__logo logo" aria-label="Go to homepage" title="Go to homepage">
+          <img src="images/icons/logo.svg" alt="logo" width="137" height="33">
+        </a>
+        <div class="footer__text text">
+          <p>Growfy is a template highly suitable for modern marketing agencies, digital studios, startups and
+            businesses. The design is made in the dark style, which makes the site memorable and you can easily adapt it
+            to your brand.</p>
+        </div>
+        <ul class="footer__list-social">
+          <li class="footer__list-social-item">
+            <a href="/" class="footer__list-social-link" aria-label="linkedin" title="linkedin">
+              <img src="./images/footer/01.svg" alt="linkedin" class="footer__list-social-image" loading="lazy">
+            </a>
+          </li>
+          <li class="footer__list-social-item">
+            <a href="/" class="footer__list-social-link" aria-label="twitter" title="twitter">
+              <img src="./images/footer/02.svg" alt="twitter" class="footer__list-social-image" loading="lazy">
+            </a>
+          </li>
+          <li class="footer__list-social-item">
+            <a href="/" class="footer__list-social-link" aria-label="facebook" title="facebook">
+              <img src="./images/footer/03.svg" alt="facebook" class="footer__list-social-image" loading="lazy">
+            </a>
+          </li>
+          <li class="footer__list-social-item">
+            <a href="/" class="footer__list-social-link" aria-label="youtube" title="youtube">
+              <img src="./images/footer/04.svg" alt="youtube" class="footer__list-social-image" loading="lazy">
+            </a>
+          </li>
+          <li class="footer__list-social-item">
+            <a href="/" class="footer__list-social-link" aria-label="instagram" title="instagram">
+              <img src="./images/footer/05.svg" alt="instagram" class="footer__list-social-image" loading="lazy">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__list-item"> Pages </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"> <span>Home</span> </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"> <span>About</span></a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>Services</span></a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>Packages</span></a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>Blog</span></a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>Contact</span></a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__list-item"> Utility pages </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>Instructions</span></a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>Style guide</span></a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>Licenses</span></a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>Changelog</span></a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>404 Not found</span></a>
+        </li>
+        <li class="footer__list-item">
+          <a href="/" class="footer__list-link"><span>Password protected</span></a>
+        </li>
+      </ul>
+      <ul class="footer__list footer__list--last">
+        <li class="footer__list-item"> Subscribe to our newsletter </li>
+        <li class="footer__list-item list-item-without-hover"> Lorem ipsum dolor sit am consectetur adipiscing </li>
+        <li class="footer__list-item">
+          <form action="#" class="footer__form" method="post">
+            <input class="footer__input" type="email" placeholder="Enter your email" required name="mail">
+            <button class="footer__button button" type="submit">Subscribe</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright"> © 3000 </div>
+  </footer>
+</body>
+</html>

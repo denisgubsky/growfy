@@ -1,0 +1,15 @@
+@use '../helpers' as *;
+
+.badge {
+  border: rem(1) solid var(--color-gray);
+  border-radius: rem(12);
+  
+  display: inline-block;
+  
+  padding: rem(11) rem(19);
+  font-weight: 300;
+  font-size: rem(10);
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--color-gray-alt);
+}

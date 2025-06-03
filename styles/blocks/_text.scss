@@ -1,0 +1,12 @@
+@use '../helpers' as *;
+
+.text {
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--color-gray-alt-alt);
+}
+
+.text--other {
+  font-size: rem(18);
+  color: var(--color-gray-alt);
+}

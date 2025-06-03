@@ -1,0 +1,21 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/header';
+@use 'blocks/logo';
+@use 'blocks/cart';
+@use 'blocks/button';
+@use 'blocks/burger-button';
+@use 'blocks/hero';
+@use 'blocks/text';
+@use 'blocks/badge';
+@use 'blocks/services';
+@use 'blocks/why-choose-us';
+@use 'blocks/statistics';
+@use 'blocks/testimonials';
+@use 'blocks/blog';
+@use 'blocks/start';
+@use 'blocks/footer';

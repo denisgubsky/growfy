@@ -1,0 +1,58 @@
+@use '../helpers' as *;
+
+.services {
+  &__inner {
+    display: flex;
+    column-gap: fluid(125, 100);
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include mobile {
+      row-gap: rem(30);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: fluid(30, 20);
+  }
+
+  &__cards {
+    display: flex;
+    column-gap: rem(32);
+
+    .services__column:nth-child(odd) {
+      padding-top: rem(48);
+
+      @include mobile {
+        padding-top: 0;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(30);
+    }
+  }
+  
+  &__item {
+    background-color: var(--color-gray);
+    border-radius: rem(30);
+    padding-block: fluid(55, 20);
+    padding-inline: rem(25);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(15);
+
+    &:not(:last-child) {
+      margin-bottom: rem(32);
+    }
+  }
+
+}

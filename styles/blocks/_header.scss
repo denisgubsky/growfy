@@ -1,0 +1,121 @@
+@use '../helpers' as *;
+
+.header {
+  @include fluid-text(16, 15);
+
+  height: fluid(116, 80);
+  background-color: rgba(13, 13, 17, 0.8);
+
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    column-gap: 1rem;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__wrapper {
+    @include flex-center;
+
+    column-gap: fluid(32, 10);
+    height: 100%;
+  }
+
+  &__overlay {
+    @include mobile-above {
+      display: contents;
+    }
+     
+    @include mobile {
+      z-index: 50;
+      position: fixed;
+      
+      inset: 0;
+      padding: 1rem;
+      background-color: var(--color-dark);
+      transition-duration: var(--transition-duration);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 2.5rem;
+
+      &:not(.is-active) {
+        @include hide;
+
+        translate: 100%;
+      }
+    }
+  }
+
+  &__menu {
+    height: 100%;
+
+    @include mobile {
+      height: auto;
+      overflow-y: auto;
+      width: 100%;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    column-gap: fluid(16, 0);
+    height: 100%;
+
+    @include mobile {
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 2.5rem;
+      width: 100%;
+    }
+  }
+
+  &__menu-link {
+    @include flex-center(true);
+
+    height: 100%;
+    padding-inline: rem(10);
+   
+    span {
+      position: relative;
+    }
+
+    span::after{
+      content: "";
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: rem(2);
+      width: 0;
+      background-color: white;
+      transition-duration: 0.4s;
+    }
+
+    @include hover {
+      span::after {
+        width: 100%;
+      }
+    }
+  }
+  
+  &__button {
+    order: 1;
+  }
+
+  &__cart {
+    height: 100%;
+  }
+}

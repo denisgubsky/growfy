@@ -1,0 +1,127 @@
+@use '../helpers' as *;
+
+.testimonials {
+  &__inner {
+   display: flex;
+   flex-direction: column;
+   row-gap: fluid(64, 15);
+  }
+
+  &__body {
+    display: flex;
+    align-items: flex-end;
+    column-gap: fluid(384, 10);
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(20);
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+    align-items: flex-start;
+  }
+
+  &__cards {
+    display: flex;
+    gap: fluid(48, 25);
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    flex: 0 1 33.333%;
+
+    &:nth-child(1) {
+      img {
+        border-radius: 0 rem(68) rem(68) rem(68);
+        transition-duration: 0.5s;
+
+      }
+      @include hover{
+        img {
+          border-radius: rem(68) 0 rem(68) rem(68);
+        }
+      }
+    }
+    &:nth-child(2) {
+      img {
+        border-radius: rem(68) 0 rem(68) rem(68);
+        transition-duration: 0.5s;
+        
+      }
+      @include hover{
+        img {
+          border-radius: 0 rem(68) rem(68) rem(68);
+        }
+      }
+    }
+    &:nth-child(3) {
+      img {
+        border-radius: rem(68) rem(68) 0 rem(68);
+        transition-duration: 0.5s;
+        
+      }
+      @include hover{
+        img {
+          border-radius: rem(68) rem(68) rem(68) 0; 
+        }
+      }
+    }
+  }
+
+  &__item {
+    background-color: var(--color-gray);
+    border-radius: rem(30);
+    padding: fluid(64, 32) fluid(40, 15);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(25);
+
+    &-header {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      column-gap: rem(16);
+
+      img {
+        width: rem(68);
+        height: rem(68);
+      }
+    }
+
+    &-info {
+      align-items: center;
+    }
+
+    &-name:not(:last-child) {
+      margin-bottom: rem(5);
+      font-weight: 300;
+    }
+
+    &-company{
+      font-weight: 300;
+      font-size: rem(14);
+      color: var(--color-gray-alt);
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(30);
+    }
+
+    &-title {
+      font-size: fluid(32, 15);
+    }
+  }
+
+
+
+  
+}
