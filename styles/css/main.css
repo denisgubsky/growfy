@@ -1058,13 +1058,25 @@ section:last-child {
   align-items: center;
   row-gap: 2.1875rem;
 }
+@media (any-hover: hover) {
+  .blog__item:hover img {
+    transform: scale(1.1);
+  }
+}
+@media (any-hover: none) {
+  .blog__item:active img {
+    transform: scale(1.1);
+  }
+}
 .blog__item-images {
   position: relative;
   flex-shrink: 0;
+  overflow: hidden;
 }
 .blog__item-image {
   position: relative;
   width: 100%;
+  transition-duration: 0.6s;
 }
 .blog__item-image img {
   width: 100%;
